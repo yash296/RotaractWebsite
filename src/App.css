@@ -1,32 +1,18 @@
-.App {
-  text-align: center;
+.navbar-nav > li {
+  margin-left: 42px;
+  margin-right: 42px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.bg-company-white {
+  background-color: white;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdown:hover > .dropdown-menu {
+  margin-top: 0px;
+  display: block;
 }
-
-.App-link {
-  color: #61dafb;
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#btnoutline {
+  outline: 0;
 }
