@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 
 const BrandImg = () => (
   <div>
-    <nav className="navbar navbar-light bg-company-white">
+    <nav className="navbar container navbar-light bg-company-white">
       <NavLink to="/" className="nav-link navbar-brand">
         <img
           src={Bimg}

@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <div>
-    <nav className="navbar navbar-expand-md navbar-light bg-light">
+    <nav className="navbar navbar-expand-sm navbar-light bg-light1">
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
-        <ul className="navbar-nav mx-auto">
+        <ul className=" navbar-nav mx-auto container">
           <li className="nav-item dropdown">
             <button
               className="nav-link dropdown-toggle"
