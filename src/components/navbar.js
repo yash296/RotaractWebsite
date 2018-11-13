@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => (
   <div>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-md navbar-light bg-light">
       <div className="collapse navbar-collapse" id="collapsibleNavbar">
         <ul className="navbar-nav mx-auto">
           <li className="nav-item dropdown">
@@ -53,7 +53,6 @@ const NavBar = () => (
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
@@ -66,21 +65,20 @@ const NavBar = () => (
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
-                Rotary overview
-              </a>
-              <a className="dropdown-item" href="#">
-                Our causes
-              </a>
-              <a className="dropdown-item" href="#">
-                The Rotary Foundation
-              </a>
+              <NavLink to="/RotaryOverview" className="nav-link">
+                <a className="dropdown-item">Rotary overview</a>
+              </NavLink>
+              <NavLink to="/OurCauses" className="nav-link">
+                <a className="dropdown-item">Our causes</a>
+              </NavLink>
+              <NavLink to="/TheRotaryFoundation" className="nav-link">
+                <a className="dropdown-item">The Rotary Foundation</a>
+              </NavLink>
             </div>
           </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
@@ -93,27 +91,26 @@ const NavBar = () => (
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
-                Featured cause
-              </a>
-              <a className="dropdown-item" href="#">
-                Service projects
-              </a>
-              <a className="dropdown-item" href="#">
-                Give{' '}
-              </a>
-              <a className="dropdown-item" href="#">
-                Become a member
-              </a>
-              <a className="dropdown-item" href="#">
-                Volunteer
-              </a>
+              <NavLink to="/FeaturedCause" className="nav-link">
+                <a className="dropdown-item">Featured cause</a>
+              </NavLink>
+              <NavLink to="/ServiceProjects" className="nav-link">
+                <a className="dropdown-item">Service projects</a>
+              </NavLink>
+              <NavLink to="/Give" className="nav-link">
+                <a className="dropdown-item">Give</a>
+              </NavLink>
+              <NavLink to="/BecomeAMember" className="nav-link">
+                <a className="dropdown-item">Become a member</a>
+              </NavLink>
+              <NavLink to="/Volunteer" className="nav-link">
+                <a className="dropdown-item">Volunteer</a>
+              </NavLink>
             </div>
           </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
@@ -126,48 +123,48 @@ const NavBar = () => (
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
-                Club news
-              </a>
-              <a className="dropdown-item" href="#">
-                Stories
-              </a>
-              <a className="dropdown-item" href="#">
-                Photo albums
-              </a>
-              <a className="dropdown-item" href="#">
-                Blog
-              </a>
-              <a className="dropdown-item" href="#">
-                Rotary news (RSS)
-              </a>
+              <NavLink to="/ClubNews" className="nav-link">
+                <a className="dropdown-item">Club news</a>
+              </NavLink>
+              <NavLink to="/Stories" className="nav-link">
+                <a className="dropdown-item">Stories</a>
+              </NavLink>
+              <NavLink to="/PhotoAlbums" className="nav-link">
+                <a className="dropdown-item">Photo albums</a>
+              </NavLink>
+              <NavLink to="/Blog" className="nav-link">
+                <a className="dropdown-item">Blog</a>
+              </NavLink>
+              <NavLink to="/Rss" className="nav-link">
+                <a className="dropdown-item">Rotary news (RSS)</a>
+              </NavLink>
             </div>
           </li>
           <li className="nav-item dropdown">
             <a
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
             >
-              Callender
+              Calendar
             </a>
             <div
               className="dropdown-menu"
               aria-labelledby="navbarDropdownMenuLink"
             >
-              <a className="dropdown-item" href="#">
-                Speakers
-              </a>
-              <a className="dropdown-item" href="#">
-                Events calendar
-              </a>
-              <a className="dropdown-item" href="#">
-                Rotary calendar
-              </a>
+              <NavLink to="/Speakers" className="nav-link">
+                <a className="dropdown-item">Speakers</a>
+              </NavLink>
+              <NavLink to="/Events" className="nav-link">
+                {' '}
+                <a className="dropdown-item">Events calendar</a>
+              </NavLink>
+              <NavLink to="/RotaryCalendar" className="nav-link">
+                <a className="dropdown-item">Rotary calendar</a>
+              </NavLink>
             </div>
           </li>
         </ul>
