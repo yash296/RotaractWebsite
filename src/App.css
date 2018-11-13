@@ -2,6 +2,11 @@
   margin-left: 42px;
   margin-right: 42px;
 }
+#navbarDropdownMenuLink {
+  background-color: transparent;
+  border: 0;
+  background: transparent;
+}
 .bg-company-white {
   background-color: white;
 }

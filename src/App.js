@@ -10,7 +10,9 @@ class App extends Component {
       <div>
         <BrandImg />
         <NavBar />
-        <PageContent />
+        <div className="container">
+          <PageContent />
+        </div>
       </div>
     );
   }

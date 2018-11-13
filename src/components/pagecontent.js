@@ -24,11 +24,13 @@ import BecomeAMember from './getInvolved/becomeAMember';
 import FeaturedCause from './getInvolved/featuredCause';
 import ServiceProjects from './getInvolved/serviceProjects';
 import Give from './getInvolved/give';
+import Home from './index';
 
 export default function() {
   return (
     <div>
       <Switch>
+        <Route exact path="/" component={Home} />
         <Route exact path="/MeetingAndInfo" component={MeetingAndInfo} />
         <Route exact path="/History" component={History} />
         <Route exact path="/Downloads" component={Downloads} />

@@ -1,10 +1,12 @@
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import Bimg from '../extras/BrandImg.png';
+/* import Button from '@material-ui/core/Button';
+ */ import Bimg from '../extras/BrandImg.png';
+import { NavLink } from 'react-router-dom';
+
 const BrandImg = () => (
   <div>
     <nav className="navbar navbar-light bg-company-white">
-      <a className="navbar-brand">
+      <NavLink to="/" className="nav-link navbar-brand">
         <img
           src={Bimg}
           width="350"
@@ -12,7 +14,7 @@ const BrandImg = () => (
           className="d-inline-block align-top"
           alt=""
         />
-      </a>
+      </NavLink>
       {/* <form className="form-inline my-2 my-lg-0">
         <input
           className="form-control mr-sm-2"
