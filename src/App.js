@@ -3,6 +3,7 @@ import BrandImg from './components/brandimg';
 import NavBar from './components/navbar';
 import PageContent from './components/pagecontent';
 import Menu from './components/menu';
+import Footer from './components/footer';
 import './App.css';
 
 class App extends Component {
@@ -19,7 +20,9 @@ class App extends Component {
         <div className="item3">
           <PageContent />
         </div>
-        <div className="item4">Footer</div>
+        <div className="item4">
+          <Footer />
+        </div>
       </div>
     );
   }

@@ -6,21 +6,6 @@ export default class Menu extends Component {
     return (
       <React.Fragment>
         <div id="menu1">
-          <h6>Our Projects</h6>
-          <ul class="menuulstyle">
-            <li>
-              <a className="iconColor" href="">
-                Polio Plus Program
-              </a>
-            </li>
-            <li>
-              <a className="iconColor" href="">
-                Kerela Flood Relief
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div id="menu1">
           <div>Connect with our club</div>
           <div>
             <a
@@ -39,9 +24,50 @@ export default class Menu extends Component {
               className="iconColor"
               href="https://www.youtube.com/channel/UCEr1TGAgUY7FoCXm_vaSp2Q"
             >
-              <i class="fab fa-fw fa-youtube" />
+              <i className="fab fa-fw fa-youtube" />
             </a>
           </div>
+        </div>
+        <div>
+          <br />
+          <br />
+          Subscribe To Our Bullitten
+          <br />
+          <br />
+          <div className="input-group mb-3">
+            <input
+              type="text"
+              className="form-control"
+              placeholder="Email Id"
+              aria-label="Email Id"
+              aria-describedby="basic-addon2"
+            />
+            <div className="input-group-append">
+              <button className="btn btn-outline-secondary" type="button">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="menu1">
+          <h6>Our Projects</h6>
+          <ul className="menuulstyle">
+            <li>
+              <a className="iconColor" href="">
+                Polio Plus Program
+              </a>
+            </li>
+            <li>
+              <a className="iconColor" href="">
+                Kerela Flood Relief
+              </a>
+            </li>
+            <li>
+              <a className="iconColor" href="">
+                NxtGn Charity Footbll
+              </a>
+            </li>
+          </ul>
         </div>
       </React.Fragment>
     );
